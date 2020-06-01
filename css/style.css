@@ -16,6 +16,10 @@ body{
     background-color:rgb(250, 94, 89);
 }
 
+.container{
+    padding: 10px 20px 10px 20px;
+}
+
 .author{
     display: block;
     color:rgb(250, 94, 89);
@@ -35,4 +39,11 @@ body{
 .box__content{
     width: 100px;
     text-align: right;
+}
+
+.button{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    color: white;
 }

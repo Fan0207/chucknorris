@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Le DOM HTML</title>
 </head>
-<body>
+<body id="body">
     <div class="container">
         <p id="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quisquam.</p>
         <div class="box">
             <div class="box__content">
-                <span class="author">Chuck Norris</span>
-                <button onclick="modifieQuote()">New quote</button>
+                <span class="author" id="author">- Chuck Norris</span>
+                <button onclick="modifieQuote()" class="button" id="button">New quote</button>
         </div>
         </div>
     </div>

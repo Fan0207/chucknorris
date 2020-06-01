@@ -9,23 +9,34 @@ let facts=["Chuck Norris a déjà compté jusqu'à l'infini. Deux fois",
 "Jesus Christ est né en 1940 avant Chuck Norris.",
 "Chuck Norris ne porte pas de montre. Il décide de l'heure qu'il est."];
 
+let colors = ["blue", "orange", "green"];
+
 console.log(facts);
 
 function randomFact(){
     return facts[ Math.floor( Math.random()*10)];
 }
 
+function randomColor(){
+    return colors[ Math.floor( Math.random()*3)];
+
+}
+
 function modifieQuote(){
     let quote = document.getElementById("quote"); 
     console.log(quote); 
-    quote.textContent = randomFact();   
+    quote.textContent = "\"" + randomFact() + "\""; 
+    let color = randomColor();
+    quote.style.color = color;
+    let author = document.getElementById("author");
+    author.style.color = color;
+    let body = document.getElementById("body");
+    body.style.backgroundColor = color;
+    let button = document.getElementById("button");
+    button.style.backgroundColor = color;
 }
 
-let r = Math.floor(Math.random*256);
-let g = Math.floor(Math.random*256);
-let b = Math.floor(Math.random*256);
+modifieQuote();
 
-function randomColor(){
-    return (`${r},${g},${b}`);
-}
+
 
